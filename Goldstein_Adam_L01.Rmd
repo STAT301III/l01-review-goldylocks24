@@ -94,6 +94,10 @@ Explain the difference between a regression and classification machine learning 
 
 When splitting the data, why is it useful to stratify by the outcome/target variable? 
 
+Answer:
+
+Stratified sampling splits a dataset such that each split is similar with respect to a particular variable. 
+
 <br>
 
 ### Question 7 
