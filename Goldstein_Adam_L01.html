@@ -278,68 +278,99 @@ div.tocify {
 <div id="part-a" class="section level4">
 <h4>Part A</h4>
 <p>What does it mean to be a mechanistic model?</p>
+<p>Answer:</p>
+<p>A mechanistic model uses a theory to predict what will happen in the real world. Mechanistic models use mathematical expressions that best describe the physical or biological process.</p>
 </div>
 <div id="part-b" class="section level4">
 <h4>Part B</h4>
 <p>What does it mean to be an empirically driven model?</p>
+<p>Answer:</p>
+<p>Empirical models use real-world events to develop a theory. The idea is that if you observe some particular outcome following some particular circumstance then you can reliably predict that outcome in the future.</p>
 </div>
 <div id="part-c" class="section level4">
 <h4>Part C</h4>
 <p>How does the mechanistic and empirically driven model terminology relate to the parametric and nonparametric model terminology?</p>
+<p>Answer:</p>
+<p>Parametric Methods uses a fixed number of parameters to build the model. Non-Parametric Methods use the flexible number of parameters to build the model. It would seem that mechanistic models are parametric methods and empirical models are nonparametric methods.</p>
 </div>
 <div id="part-d" class="section level4">
 <h4>Part D</h4>
 <p>In general, is a mechanistic or empirically driven model easier to understand? Explain.</p>
+<p>Answer:</p>
+<p>Mechanistic models are easier to understand because they are based on mathematical expressions, so there are clearer results. They are also based on concrete assumptions drawn from previous data points.</p>
 </div>
 <div id="part-e" class="section level4">
 <h4>Part E</h4>
 <p>How does mechanistic and empirically driven model terminology relate to the idea of model flexibility? That is, which would be more or less flexible than the other.</p>
+<p>Answer:</p>
+<p>Empirically driven models are more flexible than mechanistic models because they are based on more vague assumptions rather than concrete data points and mathematical expressions.</p>
 </div>
 <div id="part-f" class="section level4">
 <h4>Part F</h4>
 <p>Describe the bias-variance trade-off when considering the use of a mechanistic or empirically driven model.</p>
+<p>Answer:</p>
+<p>The bias-variance trade-off is about finding the right balance between the two because the increase of one will result in the decrease of the other and vice versa. Empirically driven models are better for understanding this trade-off.</p>
 <p><br></p>
 </div>
 </div>
 <div id="question-5" class="section level3">
 <h3>Question 5</h3>
 <p>Explain the difference between a regression and classification machine learning (ML) problems.</p>
+<p>Answer:</p>
+<p>Regression machine learning problems predict numeric outcomes, while classification machine learning problems are used to predict discrete values. A regression problem would ask for things like salary or age, while a classification problem would ask for things like Yes/No or True/False.</p>
 <p><br></p>
 </div>
 <div id="question-6" class="section level3">
 <h3>Question 6</h3>
 <p>When splitting the data, why is it useful to stratify by the outcome/target variable?</p>
+<p>Answer:</p>
+<p>Stratified sampling splits a dataset such that each split is similar with respect to a particular variable. Stratifying data also ensures that the sample and treatment groups are representative of the broader dataset.</p>
 <p><br></p>
 </div>
 <div id="question-7" class="section level3">
 <h3>Question 7</h3>
 <p>Briefly describe how v-fold cross validation with repeats is used to estimate test RMSE. Also provide an explanation of why we use it.</p>
+<p>Answer:</p>
+<p>V-fold cross-validation is repeating the cross-validation procedure multipletimes and reporting the mean result across all folds from all runs. Performing more folds and resamples increases the accuracy of the overall resampling estimate. Although there are diminishing returns after hitting a certain point, using more resamples helps the accuracy. Cross-validation also gives models the chance to train on multiple train-test splits, which gives a better indication of how well the model will perform on unseen data. RMSE is root mean squared error determines the standard error of the mean. RMSE is lowered, ie error is lowered, when you cross-validate the data.</p>
 <p><br></p>
 </div>
 <div id="question-8" class="section level3">
 <h3>Question 8</h3>
 <p>When might we use a bootstrap resampling procedure instead of v-fold cross validation to estimate test RMSE?</p>
+<p>Answer:</p>
+<p>We use bootstrapping resampling procedures instead of v-fold cross validation to estimate test RMSE when we are approximating the sampling distribution of statistics whose theoretical properties are intractable. A bootstrap sample of the training set is a sample that is the same size as the training set but is drawn with replacement. This means that some training set data points are selected multiple times for the analysis set. Bootstrap samples produce performance estimates that have very low variance (unlike cross-validation) but have significant pessimistic bias.</p>
 <p><br></p>
 </div>
 <div id="question-9" class="section level3">
 <h3>Question 9</h3>
 <p>Briefly describe model tuning and why we use it.</p>
+<p>Answer:</p>
+<p>Tuning is the process of maximizing a model’s performance by selecting appropriate “hyperparameters.” Model tuning allows us to customize our models so they generate the most accurate outcomes and give us highly valuable insights into our data.</p>
 <p><br></p>
 </div>
 <div id="question-10" class="section level3">
 <h3>Question 10</h3>
 <p>What are two common performance metrics when dealing with a regression ML problem?</p>
+<p>Answer:</p>
+<p>RMSE and MAe</p>
 <p>What are two common performance metrics when dealing with a classification ML problem?</p>
+<p>Answer:</p>
+<p>Confusion Matrix and AUC-ROC curve</p>
 <p><br></p>
 </div>
 <div id="question-11" class="section level3">
 <h3>Question 11</h3>
 <p>A political candidate’s campaign has detailed voter history data for their constituents. The campaign is interested in two questions:</p>
 <ol style="list-style-type: decimal">
-<li><p>Given a voter’s profile/data how likely is it that they will vote in favor of the candidate?</p></li>
-<li><p>How would a voter’s likelihood of support for the candidate change if they had personal contact with the candidate?</p></li>
+<li>Given a voter’s profile/data how likely is it that they will vote in favor of the candidate?</li>
 </ol>
-<p>Classify each question/problem as either prediction or inferential. Explain your reasoning for each.</p>
+<p>Answer:</p>
+<p>Predictive because we use a voter’s profile and predict a numeric outcome given a dataset of other instances with other voters. We use previous trials to predict this trial.</p>
+<ol style="list-style-type: decimal">
+<li>How would a voter’s likelihood of support for the candidate change if they had personal contact with the candidate?</li>
+</ol>
+<p>Answer:</p>
+<p>Inferential because we are not predicting anything numeric. We use a change in a single variable to see if there is a difference in outcome.</p>
 <p><br></p>
 </div>
 </div>
